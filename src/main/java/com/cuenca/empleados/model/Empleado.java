@@ -10,11 +10,56 @@ package com.cuenca.empleados.model;
  */
 public class Empleado {
     private int id;
-    
+    private int codigo;
+    private String nombre;
+    private String apellido;
+    private String email;
+    private double salario;
+    public Empleado (int id, int codigo, String nombre, String apellido, String email, double salario){
+         this.id = id;
+         this.codigo = codigo;
+         this.nombre = nombre;
+         this.apellido = apellido;
+         this.email = email; 
+         this.salario=  salario;
+    }
     public int getId(){
         return id;
     }
     public void setId(int ident){
         this.id = ident;
     }
+    
+    public int getCodigo(){
+        return codigo;
+    }
+    public void setCodigo(int codigorecibido){
+        this.codigo = codigorecibido;
+                
+    }
+    public String getNombre(){
+        return nombre;
+    }
+    public void setNombre(String nombreRecibido){
+        this.nombre = nombreRecibido;
+    }
+    public String getApellido(){
+        return apellido;
+    }
+    public void setApellido(String apellidoRecibido){
+        this.apellido = apellidoRecibido;
+    }
+     public String getEmail(){
+        return email;
+    }
+    public void setEmail(String emailRecibido){
+        this.email = emailRecibido;
+    }
+    public double getSalario(){
+        return salario;
+    }
+    public void setSalario(double salario){
+        this.salario= salario;
+    }
+            
 }
